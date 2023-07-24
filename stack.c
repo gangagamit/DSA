@@ -38,12 +38,16 @@ int main()
     printf("\n0.Exit");
     do
     {
-        prinntf("\n enter youre choice:");
-        scanf("%d",ch);
+        printf("\n enter youre choice:");
+        scanf("%d",&ch);
         switch(ch)
         {
             case 1:
                 insert(10);
+                insert(20);
+                insert(30);
+                insert(40);
+                insert(50);
                 break;
             case 2:
                 delete();
@@ -52,12 +56,10 @@ int main()
                 display();
                 break;
             case 0:
+                printf("\n Exit");
                 break;
             default:
-              
-
-
-                
+              printf("\n enter valid number");    
         }
     } while (ch!=0);
     
