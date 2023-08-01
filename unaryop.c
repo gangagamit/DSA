@@ -15,9 +15,9 @@ int main()
    //printf("a: %d,b: %d,c: %d",a,++a,++a);
    //printf("a: %d,b: %d,c: %d",++a,a,a++);
    // printf("a: %d,b: %d,c: %d",a,a,++a);
-   //printf("a: %d, b: %d, c: %d",++a,a,a);
-   // printf("a: %d,b: %d,c: %d",a++,++a,a);
-   //printf("a: %d,b: %d,c: %d",++a,a,a);
+   //printf("a: %d, b: %d,c: %d",++a,a,a);
+   //printf("a: %d,b: %d,c: %d",a++,++a,a);
+   //printf("a: %d,b: %d,c: %d",a++,a,a);
    //printf("a: %d,b: %d, c: %d",a,++a,++a);
-  printf("a: %d,b: %d, c: %d",++a,a,a++);
+  //printf("a: %d,b: %d, c: %d",++a,a,a++);
 }
