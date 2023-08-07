@@ -38,14 +38,14 @@ void Quicksort(int a[], int f, int l)
 }
 int main()
 {
-    //int a[25], i;
-    int i;
-    int a[]={50,30,10,40,20};
+    int a[25], i;
+    //int i;
+   // int a[]={50,30,10,40,20};
     printf("how many element enter:");
     scanf(" %d", &n);
-    //for (i = 0; i < n; i++)
-       // a[i] = rand() % 100 + 1;
-        //print(a);
+    for (i = 0; i < n; i++)
+        a[i] = rand() % 100 + 1;
+        print(a);
     Quicksort(a, 0, n - 1);
     printf("\n after Quick sort");
     print(a);
