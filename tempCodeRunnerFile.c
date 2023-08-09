@@ -1,1 +1,1 @@
-a++ && ++b;
+ while(ptr!=NULL)
