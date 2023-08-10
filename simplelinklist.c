@@ -39,7 +39,7 @@ void insert(int val)
         return;
     
 }
-void deleteEnd()
+void delete()
 {
     struct node *ptr = head;
     struct node *p;
@@ -111,7 +111,7 @@ int main()
 {
     int ch,m,n,c;
     printf("\n1.insert");
-    printf("\n2.deleteEnd");
+    printf("\n2.delete");
     printf("\n3.insertfirst");
     printf("\n4.deletefirst");
     printf("\n5.midinsert");
@@ -132,7 +132,7 @@ int main()
                     insert(m);
                     break;
                 case 2:
-                    deleteEnd();
+                    delete();
                     break;
                 case 3:
                     printf("\n enter value:");

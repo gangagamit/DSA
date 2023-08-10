@@ -1,1 +1,1 @@
- while(ptr!=NULL)
+{
