@@ -1,11 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 struct node
 {
     int data;
     struct node *next;
+    struct node *prev;
 };
-struct node *head = NULL;
+struct node *head=NULL;
 void display()
 {
     struct node *ptr = head;
@@ -21,13 +22,13 @@ void display()
     }
     printf("\n");
 }
-
 void insert(int val)
 {
     struct node *ptr = head;
     struct node *temp = malloc(sizeof(struct node));
     temp->data = val;
     temp->next = NULL;
+    temp->prev=NULL;
     if (head == NULL)
     {
         head = temp;
@@ -37,6 +38,7 @@ void insert(int val)
     
         ptr = ptr->next;
         ptr->next = temp;
+        temp->prev=ptr;
         return;
     
 }
@@ -65,15 +67,18 @@ void insertfirst(int val)
     struct node *temp = malloc(sizeof(struct node));
     temp->data = val;
     temp->next = NULL;
+    temp->prev=NULL;
     if(head==NULL)
     {
         head=temp;
         temp->next=NULL;
+        temp->prev=NULL;
     }
     else
     {
         ptr=head;
         temp->next=ptr;
+        ptr->prev=temp;
         head=temp;
     }
 }
@@ -83,8 +88,7 @@ void deletefirst()
     head=ptr->next;
     free(ptr);
 
-}
-void midinsert(int val,int p)
+}void midinsert(int val,int p)
 {
     struct node *ptr = head;
     struct node *temp = malloc(sizeof(struct node));
@@ -95,6 +99,7 @@ void midinsert(int val,int p)
         ptr=ptr->next;
         temp->next=ptr->next;
         ptr->next=temp;
+        temp->prev=ptr;
 }
 void middelete(int pos)
 {

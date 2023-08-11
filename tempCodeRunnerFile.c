@@ -1,1 +1,2 @@
-{
+
+    if(head==NULL)
