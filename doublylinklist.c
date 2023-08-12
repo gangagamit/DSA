@@ -88,7 +88,8 @@ void deletefirst()
     head=ptr->next;
     free(ptr);
 
-}void midinsert(int val,int p)
+}
+void midinsert(int val,int p)
 {
     struct node *ptr = head;
     struct node *temp = malloc(sizeof(struct node));
